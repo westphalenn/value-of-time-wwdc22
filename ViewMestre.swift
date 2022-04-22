@@ -9,35 +9,25 @@ import SwiftUI
 
 struct ViewMestre: View {
     var body: some View {
-        TabView {
-            Group {
-                
-                Home()
-                Intro()
-                IntroSecond()
-                Second()
-                IntroMinute()
-                Minute()
-                IntroHour()
-                Hour()
-                IntroDay()
-                Day()
-            }
-                IntroMonth()
-                Month()
-                IntroYear()
-                Year()
-                CountriesData()
-                IntroEightYears()
-                EightYears()
-                End()
-        }
-        
-        .tabViewStyle(.page)
-        .background(Color.black)
-    }
-}
 
+        
+        VStack{
+            
+            NavigationView {
+                
+                VStack {
+                    
+                    Home()
+                }
+                .background(Color.black)
+                
+            }
+        
+        .navigationViewStyle(.stack)
+    }
+    }
+        
+}
 struct ViewMestre_Previews: PreviewProvider {
     static var previews: some View {
         ViewMestre()

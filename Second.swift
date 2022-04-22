@@ -28,8 +28,8 @@ struct Second: View {
                     Text("24\n")
                     .font(.system(size: 24, weight: .bold))
                     .foregroundColor(.white)
-                    +
-                    Text("trees")
+                +
+                Text("trees")
                     .font(.system(size: 16, weight: .regular))
                     .foregroundColor(.white),
                 time: Text("Second")
@@ -46,68 +46,60 @@ struct Second: View {
         
         VStack (alignment: .leading) {
             
-            HStack {
-                VStack {
-                    Spacer()
+            ZStack {
+                
+                Color.black
+                    .ignoresSafeArea()
+                
+                
+                HStack {
                     ChartView(scale: scale, chart: chart, height: 205)
                         .padding([.bottom],50)
-                }
-             //   Spacer()
-                Spacer()
-                VStack(alignment: .leading) {
-                    //Spacer()
-                    TitleThreeView(firstPart: Text("What is the \nvalue of "), secondPart: Text("one \nsecond?"))
-                    
-                    Text("In 1 second 24 trees were\nfelled in Brazil in 2020.")
-                        .font(.system(size: 24, weight: .regular, design: .default))
-                        .foregroundColor(Color.white)
-                        .padding([.top], 20)
-                    Text("Source: Map Biomas Brasil (2021)")
-                        .font(.system(size: 14, weight: .regular, design: .default))
-                        .foregroundColor(Color.gray)
-                        .padding([.top], 20)
                     Spacer()
                 }
                 Spacer()
-            }
-            
-            
-            VStack (alignment: .leading) {
-                
-                HStack {
-                    Spacer().frame(width: 450)
-                    Spacer()
-                }
-                
-                VStack (alignment: .leading) {
-                    
-                    HStack {
-                        Spacer().frame(width: 450)
-                        Spacer()
-                    }
-                }
                 
                 HStack {
                     Spacer()
                     
-                    Button(action: {
-                        print ("Clicked")
-                    }) {
-                        Text ("Next")
-                            .padding([.trailing, .leading], 40)
-                            .padding([.top, .bottom], 15)
-                            .font(.system(size: 20, weight: .bold, design: .default))
-                            .foregroundColor(.white)
-                            .background(.red)
-                            .cornerRadius(40)
-                            .padding([.trailing],420)
-                            .padding([.bottom], 80)
+                    VStack(alignment: .leading) {
+                        
+                        VStack (alignment: .leading) {
+                            TitleThreeView(firstPart: Text("What is the \nvalue of "), secondPart: Text("one \nsecond?"))
+                            
+                            Text("In 1 second 24 trees were\nfelled in Brazil in 2020.")
+                                .font(.system(size: 24, weight: .regular, design: .default))
+                                .foregroundColor(Color.white)
+                                .padding([.top], 20)
+                            Text("Source: Map Biomas Brasil (2021)")
+                                .font(.system(size: 14, weight: .regular, design: .default))
+                                .foregroundColor(Color.gray)
+                                .padding([.top], 20)
+                            Spacer()
+                        }
+                        
+                        NavigationLink (destination:IntroMinute()) {
+                            Text ("Next")
+                                .padding([.trailing, .leading], 40)
+                                .padding([.top, .bottom], 15)
+                                .font(.system(size: 20, weight: .bold, design: .default))
+                                .foregroundColor(.white)
+                                .background(.red)
+                                .cornerRadius(40)
+                                .padding([.trailing],420)
+                                .padding([.bottom], 80)
+                        }
                     }
+                    
                 }
+                
+                .navigationBarHidden(true)
             }
-            
         }
     }
 }
+
+
+
 
 

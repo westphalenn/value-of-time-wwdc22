@@ -9,16 +9,21 @@ struct ChartView: View {
     private var scaleHeight: CGFloat = 0
     
     var body: some View {
-        HStack(alignment: .bottom, spacing: 24) {
-            VStack {
-                ScaleView(scale: scale)
-                Rectangle()
-                    .frame(width: 0, height: 100)
+        VStack {
+            
+            Spacer()
+            HStack(alignment: .bottom, spacing: 60) {
+                VStack {
+                    ScaleView(scale: scale)
+                    Rectangle()
+                        .frame(width: 0, height: 100)
+                }
+                ForEach(chart.bars) { bar in
+                    BarView(bar: bar, maxHeight: height)
+                }
+                .padding(.bottom, 10)
             }
-            ForEach(chart.bars) { bar in
-                BarView(bar: bar, maxHeight: height)
-            }
-            .padding(.bottom, 10)
+            .padding(.bottom, 160)
         }
     }
 }
@@ -26,7 +31,7 @@ struct ChartView: View {
 struct ScaleView: View {
     let scale: Scale
     var body: some View {
-        VStack(alignment: .trailing, spacing: 2) {
+        VStack(alignment: .trailing, spacing: 1) {
             ForEach(scale.steps.reversed(), id: \.self) { step in
                 ForEach(Array(1...scale.innerStepCount), id: \.self) { _ in
                     Line(width: 8)
@@ -93,7 +98,7 @@ struct BarView: View {
     }
     
     private var rectangle: some View {
-        RoundedRectangle(cornerRadius: 6, style: .circular)
+        RoundedRectangle(cornerRadius: 5, style: .circular)
             .foregroundColor(bar.color)
             .frame(width: 90, height: bar.percentage * maxHeight)
     }
@@ -109,6 +114,6 @@ struct Chart {
         let time: Text
         let unitys: Text
     }
-
+    
     let bars: [Bar]
 }
