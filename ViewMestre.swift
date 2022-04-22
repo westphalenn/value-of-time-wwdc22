@@ -10,26 +10,29 @@ import SwiftUI
 struct ViewMestre: View {
     var body: some View {
         TabView {
-            Home()
-            Intro()
-            IntroSecond()
-            Second()
-            IntroMinute()
-            Minute()
-            IntroHour()
-            Hour()
-            IntroDay()
-            Day()
-         //   IntroMonth()
-         //   Month()
-         //   IntroYear()
-         //   Year()
-         // CountriesData()
-         // IntroEightYears()
-         // EightYears()
-         // End()
-            
+            Group {
+                
+                Home()
+                Intro()
+                IntroSecond()
+                Second()
+                IntroMinute()
+                Minute()
+                IntroHour()
+                Hour()
+                IntroDay()
+                Day()
+            }
+                IntroMonth()
+                Month()
+                IntroYear()
+                Year()
+                CountriesData()
+                IntroEightYears()
+                EightYears()
+                End()
         }
+        
         .tabViewStyle(.page)
         .background(Color.black)
     }

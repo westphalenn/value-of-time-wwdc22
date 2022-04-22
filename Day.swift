@@ -12,7 +12,7 @@ struct Day: View {
         .init(
             innerStepCount: 9,
             steps: [
-                "0", "20K", "40K", "60K", "80K", "100K", "120K", "140K", "160K", "180K", "200K", "220K", "240K", "260K", "280K", "300K"
+                "0", "500K", "1M", "1,5M", "2M", "2,5M", "3M", "3,5M", "4M", "4,5M", "5M", "5,5M", "6M", "6,5M", "7M"
             ])
     }
     
@@ -20,38 +20,38 @@ struct Day: View {
         Chart(bars:
             [
                 .init(
-                    percentage: 1.1,
+                    percentage: 1.3,
                     color: .red,
                     name: Text("Felled trees")
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(.white),
                     subtitle:
-                        Text("86,4\n")
+                        Text("2,07\n")
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(.white)
                         +
-                        Text("thousand")
+                        Text("million")
                         .font(.system(size: 16, weight: .regular))
                         .foregroundColor(.white),
                     time: Text("Second")
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(.gray),
-                    unitys: Text("3.600 seconds")
+                    unitys: Text("86.400 sec.")
                         .font(.system(size: 14, weight: .regular))
                         .foregroundColor(.gray)
                 ),
                 .init(
-                    percentage: 3.6,
+                    percentage: 4.6,
                     color: .red,
                     name: Text("Cost of\nwasted water\nin US$")
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(.white),
                     subtitle:
-                        Text("296\n")
+                        Text("7,10\n")
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(.white)
                         +
-                        Text("thousand")
+                        Text("million")
                         .font(.system(size: 16, weight: .regular))
                         .foregroundColor(.white),
                     time: Text("Minute")
@@ -62,13 +62,13 @@ struct Day: View {
                         .foregroundColor(.gray)
                 ),
                 .init(
-                    percentage: 0.13,
+                    percentage: 0.08,
                     color: .red,
                     name: Text("Cattle\nand swine\nslaughtered")
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(.white),
                     subtitle:
-                        Text("9,31\n")
+                        Text("223\n")
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(.white)
                         +
@@ -83,17 +83,17 @@ struct Day: View {
                         .foregroundColor(.gray)
                 ),
                 .init(
-                    percentage: 0.13,
+                    percentage: 1.9,
                     color: .red,
-                    name: Text("Lorem")
+                    name: Text("Barrels\nof oil\nextracted")
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(.white),
                     subtitle:
-                        Text("Lorem\n")
+                        Text("2,94\n")
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(.white)
                         +
-                        Text("ddd")
+                        Text("million")
                         .font(.system(size: 16, weight: .regular))
                         .foregroundColor(.white),
                     time: Text("Day")
@@ -127,7 +127,7 @@ struct Day: View {
                         .font(.system(size: 24, weight: .regular, design: .default))
                         .foregroundColor(Color.white)
                         .padding([.top], 20)
-                    Text("Source: Censo Agro IBGE (2022)")
+                    Text("Source: ANP - Agência Nacional do\nPetróleo, Gás Natural e\nBiocombustíveis (2021)")
                         .font(.system(size: 14, weight: .regular, design: .default))
                         .foregroundColor(Color.gray)
                         .padding([.top], 20)
