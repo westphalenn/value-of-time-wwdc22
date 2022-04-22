@@ -12,7 +12,9 @@ struct Year: View {
         .init(
             innerStepCount: 9,
             steps: [
-                "0", "10M", "20M", "30M", "40M", "50M", "60M", "70M", "80M", "90M", "100M", "110M", "120M", "130M", "140M", "150M", "160M", "170M", "180M", "190M", "200M", "210M", "220M"
+                "0", "100M", "200M", "300M", "400M", "500M", "600M", "700M", "800M", "900M", "1B", "1,1B", "1,2B", "1,3B", "1,4B", "1,5B", "1,6B", "1,7B", "1,8B", "1,9B", "2B", "2,1B", "2,2B", "2,3B", "2,4B", "2,5B"
+                
+                //"0", "10M", "20M", "30M", "40M", "50M", "60M", "70M", "80M", "90M", "100M", "110M", "120M", "130M", "140M", "150M", "160M", "170M", "180M", "190M", "200M", "210M", "220M"
             ])
     }
     
@@ -20,7 +22,7 @@ struct Year: View {
         Chart(bars:
                 [
                     .init(
-                        percentage: 1.24,
+                        percentage: 1.45,
                         color: .red,
                         name: Text("Felled trees")
                             .font(.system(size: 16, weight: .semibold))
@@ -36,33 +38,33 @@ struct Year: View {
                         time: Text("Second")
                             .font(.system(size: 24, weight: .bold))
                             .foregroundColor(.gray),
-                        unitys: Text("31.104.000 sec.")
+                        unitys: Text("31.1M of sec.")
                             .font(.system(size: 14, weight: .regular))
                             .foregroundColor(.gray)
                     ),
                     .init(
-                        percentage: 4.1,
+                        percentage: 4.85,
                         color: .red,
                         name: Text("Cost of\nwasted water\nin US$")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:
-                            Text("2,59\n")
+                            Text("2,59 B")
                             .font(.system(size: 24, weight: .bold))
-                            .foregroundColor(.white)
-                        +
-                        Text("billion")
-                            .font(.system(size: 16, weight: .regular))
                             .foregroundColor(.white),
+                       // +
+                        //Text("billion")
+                            //  .font(.system(size: 16, weight: .regular))
+                            //.foregroundColor(.white),
                         time: Text("Minute")
                             .font(.system(size: 24, weight: .bold))
                             .foregroundColor(.gray),
-                        unitys: Text("518.400 minutes")
+                        unitys: Text("518.4K of min.")
                             .font(.system(size: 14, weight: .regular))
                             .foregroundColor(.gray)
                     ),
                     .init(
-                        percentage: 0.09,
+                        percentage: 0.15,
                         color: .red,
                         name: Text("Cattle\nand swine\nslaughtered")
                             .font(.system(size: 16, weight: .semibold))
@@ -83,7 +85,7 @@ struct Year: View {
                             .foregroundColor(.gray)
                     ),
                     .init(
-                        percentage: 1.7,
+                        percentage: 1.95,
                         color: .red,
                         name: Text("Barrels\nof oil\nextracted")
                             .font(.system(size: 16, weight: .semibold))
@@ -104,7 +106,7 @@ struct Year: View {
                             .foregroundColor(.gray)
                     ),
                     .init(
-                        percentage: 0.09,
+                        percentage: 0.13,
                         color: .red,
                         name: Text("Tons of\nsolid waste\ngenerated")
                             .font(.system(size: 16, weight: .semibold))
@@ -125,7 +127,7 @@ struct Year: View {
                             .foregroundColor(.gray)
                     ),
                     .init(
-                        percentage: 0.09,
+                        percentage: 4.1,
                         color: .red,
                         name: Text("Tons of\ngreenhouse\ngases emitted")
                             .font(.system(size: 16, weight: .semibold))
@@ -185,7 +187,7 @@ struct Year: View {
                             
                         }
                         
-                        NavigationLink (destination:IntroYear()) {
+                        NavigationLink (destination:CountriesData()) {
                             Text ("Next")
                                 .padding([.trailing, .leading], 40)
                                 .padding([.top, .bottom], 15)
@@ -204,4 +206,10 @@ struct Year: View {
         }
     }
     
+}
+
+struct Year_Previews: PreviewProvider {
+    static var previews: some View {
+        Year()
+    }
 }

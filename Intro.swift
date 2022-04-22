@@ -79,8 +79,8 @@ struct Intro: View {
                             .foregroundColor(.white)
                             .background(.red)
                             .cornerRadius(40)
-                            .padding([.trailing],330)
-                            .padding([.top], 100)
+                            .padding([.trailing],410)
+                            .padding([.top], 90)
                             //.padding([.bottom], 80)
                     }
                 }

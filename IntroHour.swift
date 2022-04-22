@@ -8,7 +8,58 @@
 import SwiftUI
 
 struct IntroHour: View {
+    
     var body: some View {
+        
+        VStack (alignment: .leading) {
+            
+            ZStack {
+                
+                Color.black
+                    .ignoresSafeArea()
+                
+                Spacer()
+                
+                HStack {
+                    Spacer()
+                    
+                    VStack(alignment: .leading) {
+                        
+                        Spacer()
+                        VStack (alignment: .leading) {
+                            TitleTimerView (firstPart: Text("0"), secondPart: Text("1:00:00"))
+                            
+                            Spacer()
+                        }
+                        
+                        NavigationLink (destination:Hour()) {
+                            Text ("See value")
+                                .padding([.trailing, .leading], 40)
+                                .padding([.top, .bottom], 15)
+                                .font(.system(size: 20, weight: .bold, design: .default))
+                                .foregroundColor(.white)
+                                .background(.red)
+                                .cornerRadius(40)
+                                .padding([.trailing],400)
+                                .padding([.bottom], 80)
+                        }
+                    }
+                    
+                }
+                
+                .navigationBarHidden(true)
+            }
+        }
+    }
+}
+
+
+
+
+//Intro dos tempos antiga
+    
+    
+/*    var body: some View {
         
         
         ZStack {
@@ -47,4 +98,4 @@ struct IntroHour: View {
         }
         .navigationBarHidden(true)
     }
-}
+}*/

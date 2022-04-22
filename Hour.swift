@@ -20,7 +20,7 @@ struct Hour: View {
         Chart(bars:
                 [
                     .init(
-                        percentage: 1.1,
+                        percentage: 0.85,
                         color: .red,
                         name: Text("Felled trees")
                             .font(.system(size: 16, weight: .semibold))
@@ -41,7 +41,7 @@ struct Hour: View {
                             .foregroundColor(.gray)
                     ),
                     .init(
-                        percentage: 3.6,
+                        percentage: 2.9,
                         color: .red,
                         name: Text("Cost of\nwasted water\nin US$")
                             .font(.system(size: 16, weight: .semibold))
@@ -62,7 +62,7 @@ struct Hour: View {
                             .foregroundColor(.gray)
                     ),
                     .init(
-                        percentage: 0.13,
+                        percentage: 0.1,
                         color: .red,
                         name: Text("Cattle\nand swine\nslaughtered")
                             .font(.system(size: 16, weight: .semibold))

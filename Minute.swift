@@ -20,7 +20,7 @@ struct Minute: View {
         Chart(bars:
                 [
                     .init(
-                        percentage: 0.4,
+                        percentage: 0.3,
                         color: .red,
                         name: Text("Felled trees")
                             .font(.system(size: 16, weight: .semibold))
@@ -41,7 +41,7 @@ struct Minute: View {
                             .foregroundColor(.gray)
                     ),
                     .init(
-                        percentage: 1.2,
+                        percentage: 0.95,
                         color: .red,
                         name: Text("Cost of\nwasted water\nin US$")
                             .font(.system(size: 16, weight: .semibold))

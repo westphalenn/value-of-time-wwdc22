@@ -19,7 +19,7 @@ struct Second: View {
     private var chart: Chart {
         Chart(bars: [
             .init(
-                percentage: 0.6,
+                percentage: 0.5,
                 color: .red,
                 name: Text("Felled trees")
                     .font(.system(size: 16, weight: .semibold))
