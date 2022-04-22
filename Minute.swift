@@ -26,12 +26,12 @@ struct Minute: View {
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(.white),
                     subtitle:
-                        Text("1.440\n")
+                        Text("1,440\n")
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(.white)
                         +
                         Text("thousand")
-                        .font(.system(size: 20, weight: .regular))
+                        .font(.system(size: 16, weight: .regular))
                         .foregroundColor(.white),
                     time: Text("Second")
                         .font(.system(size: 24, weight: .bold))
@@ -43,16 +43,16 @@ struct Minute: View {
                 .init(
                     percentage: 1.2,
                     color: .red,
-                    name: Text("Cost of wasted\n water in US$")
+                    name: Text("Cost of\nwasted water\nin US$")
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(.white),
                     subtitle:
-                        Text("4.935\n")
+                        Text("4,935\n")
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(.white)
                         +
                         Text("thousand")
-                        .font(.system(size: 20, weight: .regular))
+                        .font(.system(size: 16, weight: .regular))
                         .foregroundColor(.white),
                     time: Text("Minute")
                         .font(.system(size: 24, weight: .bold))

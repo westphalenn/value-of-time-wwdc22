@@ -30,7 +30,7 @@ struct Second: View {
                     .foregroundColor(.white)
                     +
                     Text("trees")
-                    .font(.system(size: 24, weight: .regular))
+                    .font(.system(size: 16, weight: .regular))
                     .foregroundColor(.white),
                 time: Text("Second")
                     .font(.system(size: 24, weight: .bold))
@@ -58,7 +58,7 @@ struct Second: View {
                     //Spacer()
                     TitleThreeView(firstPart: Text("What is the \nvalue of "), secondPart: Text("one \nsecond?"))
                     
-                    Text("In 1 second 24 trees was\nfelled in Brazil in 2020.")
+                    Text("In 1 second 24 trees were\nfelled in Brazil in 2020.")
                         .font(.system(size: 24, weight: .regular, design: .default))
                         .foregroundColor(Color.white)
                         .padding([.top], 20)

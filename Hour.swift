@@ -12,7 +12,7 @@ struct Hour: View {
         .init(
             innerStepCount: 9,
             steps: [
-                "0", "100K", "200K", "300K", "400K", "500K", "600K", "700K", "800K", "900K", "1M", "1.1M", "1.2M", "1.3M"
+                "0", "20K", "40K", "60K", "80K", "100K", "120K", "140K", "160K", "180K", "200K", "220K", "240K", "260K", "280K", "300K"
             ])
     }
     
@@ -20,18 +20,18 @@ struct Hour: View {
         Chart(bars:
             [
                 .init(
-                    percentage: 0.2,
+                    percentage: 1.1,
                     color: .red,
                     name: Text("Felled trees")
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(.white),
                     subtitle:
-                        Text("86.400\n")
+                        Text("86,4\n")
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(.white)
                         +
                         Text("thousand")
-                        .font(.system(size: 20, weight: .regular))
+                        .font(.system(size: 16, weight: .regular))
                         .foregroundColor(.white),
                     time: Text("Second")
                         .font(.system(size: 24, weight: .bold))
@@ -41,18 +41,18 @@ struct Hour: View {
                         .foregroundColor(.gray)
                 ),
                 .init(
-                    percentage: 3.2,
+                    percentage: 3.6,
                     color: .red,
-                    name: Text("Cost of wasted\n water in US$")
+                    name: Text("Cost of\nwasted water\nin US$")
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(.white),
                     subtitle:
-                        Text("1.38\n")
+                        Text("296\n")
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(.white)
                         +
-                        Text("million")
-                        .font(.system(size: 20, weight: .regular))
+                        Text("thousand")
+                        .font(.system(size: 16, weight: .regular))
                         .foregroundColor(.white),
                     time: Text("Minute")
                         .font(.system(size: 24, weight: .bold))
@@ -62,18 +62,18 @@ struct Hour: View {
                         .foregroundColor(.gray)
                 ),
                 .init(
-                    percentage: 0.007,
+                    percentage: 0.13,
                     color: .red,
-                    name: Text("New vehicles\n produced")
+                    name: Text("Cattle\nand swine\nslaughtered")
                         .font(.system(size: 16, weight: .semibold))
                         .foregroundColor(.white),
                     subtitle:
-                        Text("256\n")
+                        Text("9,31\n")
                         .font(.system(size: 24, weight: .bold))
                         .foregroundColor(.white)
                         +
-                        Text("vehicles")
-                        .font(.system(size: 20, weight: .regular))
+                        Text("thousand")
+                        .font(.system(size: 16, weight: .regular))
                         .foregroundColor(.white),
                     time: Text("Hour")
                         .font(.system(size: 24, weight: .bold))
@@ -102,11 +102,11 @@ struct Hour: View {
                     //Spacer()
                     TitleThreeView(firstPart: Text("What is the \nvalue of "), secondPart: Text("one \nhour?"))
                     
-                    Text("256 new vehicles was\nproduced in Brazil per\nhour in 2021, increasing\nthe number of vehicles\nin cities.")
+                    Text("9,318 thousand, is the\nsum of cattle and swine\nslaughtered per hour in\nBrazil in 2021.")
                         .font(.system(size: 24, weight: .regular, design: .default))
                         .foregroundColor(Color.white)
                         .padding([.top], 20)
-                    Text("Source: Anfavea - Associação\nNacional de Fabricantes de\nVeículos Automotores (2022)")
+                    Text("Source: Censo Agro IBGE (2022)")
                         .font(.system(size: 14, weight: .regular, design: .default))
                         .foregroundColor(Color.gray)
                         .padding([.top], 20)
