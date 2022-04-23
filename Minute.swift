@@ -91,7 +91,7 @@ struct Minute: View {
                         
                         TitleThreeView(firstPart: Text("What is the \nvalue of "), secondPart: Text("one \nminute?"))
                         
-                        Text("Wasted drinking water in \nBrazil generates a loss of\n US$ 4,935 per minute\n in 2018. The causes are\n diverse, including leaks\n and fraud.")
+                        Text("Wasted drinking water in\nBrazil generates a loss of\nUS$ 4,935 per minute\nin 2018. The causes are\ndiverse, including leaks\nand fraud.")
                             .font(.system(size: 24, weight: .regular, design: .default))
                             .foregroundColor(Color.white)
                             .padding([.top], 20)

@@ -157,7 +157,7 @@ struct Day: View {
                                 .background(.red)
                                 .cornerRadius(40)
                                 .padding([.trailing],420)
-                                .padding([.bottom], 80)
+                                .padding([.bottom], 100)
                         }
                     }
                 }

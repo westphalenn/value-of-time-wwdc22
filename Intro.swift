@@ -81,7 +81,7 @@ struct Intro: View {
                             .cornerRadius(40)
                             .padding([.trailing],410)
                             .padding([.top], 90)
-                            //.padding([.bottom], 80)
+                            .padding([.bottom], 80)
                     }
                 }
                 

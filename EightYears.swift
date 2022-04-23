@@ -28,7 +28,7 @@ struct EightYears: View {
                         VStack(alignment: .leading) {
                             TitleThreeView(firstPart: Text("What is the \nvalue of "), secondPart: Text("eight \nyears?"))
                             
-                            Text("It is the time we have until\n2030 to reduce these and other\nnumbers, in search of mitigating\ngreenhouse gas emissions.\n\nIf this is not done,\nthe planet will warm up\nby 3,20ºC degrees by the\nend of the century, with\nirreversible consequences.")
+                            Text("It is the time we have until\n2030 to reduce these and other\nnumbers, with the objective\nof mitigating greenhouse\ngas emissions.\n\nIf this is not done,\nthe planet will warm up\nby 3,20ºC degrees by the\nend of the century, with\nirreversible consequences.")
                                 .font(.system(size: 24, weight: .regular, design: .default))
                                 .foregroundColor(Color.white)
                                 .padding([.top], 20)

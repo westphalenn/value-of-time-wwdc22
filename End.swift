@@ -8,6 +8,49 @@
 import SwiftUI
 
 struct End: View {
+
+
+/*
+    let date = NSDate()
+    let calendar = NSCalendar.current
+    let components = calendar.components (.calendarUnitHour | .calendarUnitMinute, fromDate: date)
+    let hour = components.hour
+    let minutes = components.minute
+*/
+    
+    
+    
+/*
+    enum Calendar.Component
+    let myCalendar = Calendar(identifier: .gregorian)
+    let ymd = myCalendar.dateComponents([.year, .month, .day], from: Date())
+*/
+    
+    
+    
+/*
+    @State var nowDate: Date = Date()
+    let referenceDate: Date
+    var timer: Timer {
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) {_ in
+            self.nowDate = Date()
+        }
+    }
+    
+    func countDownString(from date: Date) -> String {
+        let calendar = Calendar(identifier: .gregorian)
+        let components = calendar
+            .dateComponents([.day, .hour, .minute, .second],
+                            from: nowDate,
+                            to: referenceDate)
+        return String(format: "%02dd:%02dh:%02dm:%02ds",
+                      components.day ?? 00,
+                      components.hour ?? 00,
+                      components.minute ?? 00,
+                      components.second ?? 00)
+    }
+*/
+    
     
     var body: some View {
         
@@ -31,12 +74,18 @@ struct End: View {
                     Spacer().frame(width: 20)
                     
                     TitleFinalTimer(firstPart: Text("2810 "), secondPart: Text("days "), thirdPart: Text("00:00:00"), fourthPart: Text(" to"), fifthPart: Text(" 2030"))
+/*
+                    Text(countDownString(from: referenceDate))
+                        .font(.largeTitle)
+                        .onAppear(perform: {
+                            _ = self.timer
+                        })
+ */
+                    
                 }
                 
                 Spacer()
-                
-                //2812 days 12:57:20 to 2030
-                
+                                
                 HStack {
                     Spacer()
                     
@@ -50,7 +99,7 @@ struct End: View {
                             .background(.red)
                             .cornerRadius(40)
                             .padding([.trailing],400)
-                            .padding([.bottom], 100)
+                            .padding([.bottom], 80)
                     }
                 }
             }
@@ -59,11 +108,7 @@ struct End: View {
     }
 }
 
-struct End_Previews: PreviewProvider {
-    static var previews: some View {
-        End()
-    }
-}
+
 
 
 

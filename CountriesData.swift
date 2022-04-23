@@ -134,7 +134,7 @@ struct CountriesData: View {
                         VStack(alignment: .leading) {
                             TitleThreeView(firstPart: Text("If the previous\ndata "), secondPart: Text("scare\nyou..."))
                             
-                            Text("Know that Brazil isn\nonly the 4th country\nin the ranking of greenhouse\ngas emissions since 1850.")
+                            Text("Know that Brazil is\nnonly the 4th country\nin the ranking of greenhouse\ngas emissions since 1850.")
                                 .font(.system(size: 24, weight: .regular, design: .default))
                                 .foregroundColor(Color.white)
                                 .padding([.top], 20)
