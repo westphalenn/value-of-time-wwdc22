@@ -13,9 +13,7 @@ struct Year: View {
             innerStepCount: 9,
             steps: [
                 "0", "100M", "200M", "300M", "400M", "500M", "600M", "700M", "800M", "900M", "1B", "1,1B", "1,2B", "1,3B", "1,4B", "1,5B", "1,6B", "1,7B", "1,8B", "1,9B", "2B", "2,1B", "2,2B", "2,3B", "2,4B", "2,5B"
-                
-                //"0", "10M", "20M", "30M", "40M", "50M", "60M", "70M", "80M", "90M", "100M", "110M", "120M", "130M", "140M", "150M", "160M", "170M", "180M", "190M", "200M", "210M", "220M"
-            ])
+                    ])
     }
     
     private var chart: Chart {
@@ -206,10 +204,4 @@ struct Year: View {
         }
     }
     
-}
-
-struct Year_Previews: PreviewProvider {
-    static var previews: some View {
-        Year()
-    }
 }

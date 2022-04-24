@@ -1,6 +1,6 @@
 //
 //  Hour.swift
-//  valeu-of-time
+//  value-of-time
 //
 //  Created by Frederico Westphalen Mendes Machado on 21/04/22.
 //
