@@ -70,21 +70,6 @@ struct End: View {
                 }
                 Spacer()
                 
-                HStack{
-                    Spacer().frame(width: 20)
-                    
-                    TitleFinalTimer(firstPart: Text("2810 "), secondPart: Text("days "), thirdPart: Text("00:00:00"), fourthPart: Text(" to"), fifthPart: Text(" 2030"))
-/*
-                    Text(countDownString(from: referenceDate))
-                        .font(.largeTitle)
-                        .onAppear(perform: {
-                            _ = self.timer
-                        })
- */
-                    
-                }
-                
-                Spacer()
                                 
                 HStack {
                     Spacer()
