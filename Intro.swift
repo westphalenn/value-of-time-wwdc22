@@ -90,9 +90,3 @@ struct Intro: View {
         }
     }
 }
-
-struct Intro_Previews: PreviewProvider {
-    static var previews: some View {
-        Intro()
-    }
-}

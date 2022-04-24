@@ -43,7 +43,7 @@ struct Minute: View {
                     .init(
                         percentage: 0.95,
                         color: .red,
-                        name: Text("Cost of\nwasted water\nin US$")
+                        name: Text("Cost water")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:
@@ -51,7 +51,7 @@ struct Minute: View {
                             .font(.system(size: 24, weight: .bold))
                             .foregroundColor(.white)
                         +
-                        Text("thousand")
+                        Text("thousand\nUS$")
                             .font(.system(size: 16, weight: .regular))
                             .foregroundColor(.white),
                         time: Text("Minute")

@@ -22,7 +22,7 @@ struct CountriesData: View {
         Chart(bars:
                 [
                     .init(
-                        percentage:2.0,
+                        percentage:1.98,
                         color: .red,
                         name: Text("United States")
                             .font(.system(size: 16, weight: .semibold))
@@ -43,7 +43,7 @@ struct CountriesData: View {
                             .foregroundColor(.gray)
                     ),
                     .init(
-                        percentage: 4.6,
+                        percentage: 1.1,
                         color: .red,
                         name: Text("China")
                             .font(.system(size: 16, weight: .semibold))
@@ -64,7 +64,7 @@ struct CountriesData: View {
                             .foregroundColor(.gray)
                     ),
                     .init(
-                        percentage: 0.15,
+                        percentage: 0.7,
                         color: .red,
                         name: Text("Russia")
                             .font(.system(size: 16, weight: .semibold))
@@ -85,7 +85,7 @@ struct CountriesData: View {
                             .foregroundColor(.gray)
                     ),
                     .init(
-                        percentage: 1.9,
+                        percentage: 0.45,
                         color: .red,
                         name: Text("Brazil")
                             .font(.system(size: 16, weight: .semibold))

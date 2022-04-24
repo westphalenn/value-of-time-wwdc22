@@ -43,7 +43,7 @@ struct Hour: View {
                     .init(
                         percentage: 2.9,
                         color: .red,
-                        name: Text("Cost of\nwasted water\nin US$")
+                        name: Text("Cost water")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:
@@ -51,7 +51,7 @@ struct Hour: View {
                             .font(.system(size: 24, weight: .bold))
                             .foregroundColor(.white)
                         +
-                        Text("thousand")
+                        Text("thousand\nUS$")
                             .font(.system(size: 16, weight: .regular))
                             .foregroundColor(.white),
                         time: Text("Minute")
@@ -64,7 +64,7 @@ struct Hour: View {
                     .init(
                         percentage: 0.1,
                         color: .red,
-                        name: Text("Cattle\nand swine\nslaughtered")
+                        name: Text("Cattle & Swine")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:

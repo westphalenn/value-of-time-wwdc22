@@ -39,12 +39,3 @@ struct Home: View {
         }
     }
 }
-
-
-
-//Text("What is the\nvalue of\ntime?")
-//    .font(.system(size: 130.0, weight: .bold, design: .default))
-//  .foregroundColor(Color.white)
-//.padding([.top], 100)
-//.padding([.leading], 70)
-//Spacer()

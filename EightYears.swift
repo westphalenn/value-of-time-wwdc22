@@ -64,10 +64,3 @@ struct EightYears: View {
     }
     
 }
-
-
-struct EightYears_Previews: PreviewProvider {
-    static var previews: some View {
-        EightYears()
-    }
-}

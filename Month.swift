@@ -43,7 +43,7 @@ struct Month: View {
                     .init(
                         percentage: 4.1,
                         color: .red,
-                        name: Text("Cost of\nwasted water\nin US$")
+                        name: Text("Cost water")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:
@@ -51,7 +51,7 @@ struct Month: View {
                             .font(.system(size: 24, weight: .bold))
                             .foregroundColor(.white)
                         +
-                        Text("million")
+                        Text("million\nUS$")
                             .font(.system(size: 16, weight: .regular))
                             .foregroundColor(.white),
                         time: Text("Minute")
@@ -64,7 +64,7 @@ struct Month: View {
                     .init(
                         percentage: 0.09,
                         color: .red,
-                        name: Text("Cattle\nand swine\nslaughtered")
+                        name: Text("Cattle & swine")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:
@@ -85,7 +85,7 @@ struct Month: View {
                     .init(
                         percentage: 1.7,
                         color: .red,
-                        name: Text("Barrels\nof oil\nextracted")
+                        name: Text("Barrels of oil")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:
@@ -106,7 +106,7 @@ struct Month: View {
                     .init(
                         percentage: 0.09,
                         color: .red,
-                        name: Text("Tons of\nsolid waste\ngenerated")
+                        name: Text("Solid waste")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:
@@ -114,7 +114,7 @@ struct Month: View {
                             .font(.system(size: 24, weight: .bold))
                             .foregroundColor(.white)
                         +
-                        Text("million")
+                        Text("million\ntons")
                             .font(.system(size: 16, weight: .regular))
                             .foregroundColor(.white),
                         time: Text("Month")

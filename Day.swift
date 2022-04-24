@@ -48,7 +48,7 @@ struct Day: View {
                     .init(
                         percentage: 4.6,
                         color: .red,
-                        name: Text("Cost of\nwasted water\nin US$")
+                        name: Text("Cost water")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:
@@ -56,7 +56,7 @@ struct Day: View {
                             .font(.system(size: 24, weight: .bold))
                             .foregroundColor(.white)
                         +
-                        Text("million")
+                        Text("million US$")
                             .font(.system(size: 16, weight: .regular))
                             .foregroundColor(.white),
                         time: Text("Minute")
@@ -69,7 +69,7 @@ struct Day: View {
                     .init(
                         percentage: 0.15,
                         color: .red,
-                        name: Text("Cattle\nand swine\nslaughtered")
+                        name: Text("Cattle & swine")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:
@@ -90,7 +90,7 @@ struct Day: View {
                     .init(
                         percentage: 1.9,
                         color: .red,
-                        name: Text("Barrels\nof oil\nextracted")
+                        name: Text("Barrels of oil")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:

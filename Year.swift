@@ -45,7 +45,7 @@ struct Year: View {
                     .init(
                         percentage: 4.85,
                         color: .red,
-                        name: Text("Cost of\nwasted water\nin US$")
+                        name: Text("Cost water")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:
@@ -66,7 +66,7 @@ struct Year: View {
                     .init(
                         percentage: 0.15,
                         color: .red,
-                        name: Text("Cattle\nand swine\nslaughtered")
+                        name: Text("Cattle & swine")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:
@@ -87,7 +87,7 @@ struct Year: View {
                     .init(
                         percentage: 1.95,
                         color: .red,
-                        name: Text("Barrels\nof oil\nextracted")
+                        name: Text("Barrels of oil")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:
@@ -108,7 +108,7 @@ struct Year: View {
                     .init(
                         percentage: 0.13,
                         color: .red,
-                        name: Text("Tons of\nsolid waste\ngenerated")
+                        name: Text("Solid waste")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:
@@ -116,7 +116,7 @@ struct Year: View {
                             .font(.system(size: 24, weight: .bold))
                             .foregroundColor(.white)
                         +
-                        Text("million")
+                        Text("million\ntons")
                             .font(.system(size: 16, weight: .regular))
                             .foregroundColor(.white),
                         time: Text("Month")
@@ -129,7 +129,7 @@ struct Year: View {
                     .init(
                         percentage: 4.1,
                         color: .red,
-                        name: Text("Tons of\ngreenhouse\ngases emitted")
+                        name: Text("greenhouse gases")
                             .font(.system(size: 16, weight: .semibold))
                             .foregroundColor(.white),
                         subtitle:
@@ -137,7 +137,7 @@ struct Year: View {
                             .font(.system(size: 24, weight: .bold))
                             .foregroundColor(.white)
                         +
-                        Text("billion")
+                        Text("billion\ntons")
                             .font(.system(size: 16, weight: .regular))
                             .foregroundColor(.white),
                         time: Text("Year")

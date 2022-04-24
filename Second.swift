@@ -98,8 +98,3 @@ struct Second: View {
         }
     }
 }
-
-
-
-
-
