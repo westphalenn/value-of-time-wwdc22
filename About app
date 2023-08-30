@@ -1,0 +1,13 @@
+Qual o valor do tempo? Essa deve ser uma das perguntas mais feitas na história. Muitas coisas acontecem a cada segundo, e quando multiplicamos essas atividades chegamos números tão grandes que nem somos capazes de tangibilizar o dimensão do que representam.
+
+No dia a dia não damos tanto valor aos segundos, aos minutos, as horas etc. Afinal, o tempo passa rápido e sempre há um novo dia para viver. Porém, quando paramos para refletir nossa vida, o tempo sempre está presente. Estou aproveitando a minha vida? Estou aproveitando o meu tempo?
+
+Nós sempre atribuímos valores ao tempo, e nessa experiência convido você a atribuir novos. Qual o valor de 1 minuto? De 1 hora? De 1 dia? Por meio de um gráfico construído totalmente em SwiftUI o usuário pode comparar unidades de medida do tempo com uma atividade humana que emite gases causadores do efeito estufa (CO2).
+
+Durante o fluxo o usuário visualiza uma unidade de medida de tempo que é alterada de maneira crescente ao longo da navegação. O gráfico e números se atualizam a cada etapa e os valores anteriores são multiplicados de acordo com a etapa atual. 1 hora possui 60 minutos, 60 minutos possuem 3.600 segundos. Essa é a lógica que se repete novos valores atribuídos.
+
+Isso foi possível com um gráfico construído com Variáveis, Constantes e Structs que permitem adicionar barras, alterar valores e reutilizar a estrutura nas etapas da experiência. Dessa forma a qualidade da representação também foi mantida, não dependendo de assets ou imagens, garantindo a resolução e responsividade.
+
+Ao final do Playground, a mensagem principal é apresentada. According to a Sixth Assesment Report of Intergovernamental Panel on Climate Change (IPCC) nós precisamos reduzir em 43% as emissões de gases do efeito estufa até 2030 para frear o aquecimento global em 1.5ºC a mais do que era no período pré-industrial, sendo o limite estabelecido no Acordo de Paris. Ou seja, nos restam 8 anos para tomar providências, envolvendo políticos, empresas e sociedade.
+
+O ponto alto é associar esse objetivo ao valor que damos ao tempo. 8 anos parece muito, mas não é, principalmente se entendermos que os próximos 8 anos são decisivos para o futuro da humanidade. Para você, qual é o valor do tempo?
